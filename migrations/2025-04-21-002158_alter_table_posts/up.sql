@@ -1,0 +1,2 @@
+-- Your SQL goes here
+ALTER TABLE POSTS ALTER COLUMN created_by DROP NOT NULL;

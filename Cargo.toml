@@ -1,0 +1,12 @@
+[package]
+name = "RustRocketDieselBlog"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rocket = { version ="0.5.1", features = ["json"] }
+diesel = { version = "2.0.0", features = ["postgres", "r2d2"] }
+dotenvy = "0.15"
+serde = "1.0.152"
+
+rocket_dyn_templates = { version = "0.2.0", features = ["tera","handlebars"]}
