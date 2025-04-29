@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
     constraint pk_user_id primary key(id)
 );
 
+
 -- Your SQL goes here
 CREATE TABLE if not EXISTS posts (
   id SERIAL,

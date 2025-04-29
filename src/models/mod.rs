@@ -1,2 +1,3 @@
-pub mod db_tables;
+pub mod post;
 pub mod paginate;
+pub mod user;

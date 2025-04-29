@@ -9,7 +9,7 @@ use rocket::serde::{ json::Json };
 use rocket::{ get, post };
 
 use crate::models::paginate::{ PaginatedResponse, PaginationMeta };
-use crate::models::db_tables::*;
+use crate::models::post::*;
 
 use crate::schema::posts::dsl::*;
 use crate::schema::posts_tags::dsl::*;

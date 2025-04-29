@@ -1,25 +1,10 @@
 
-use crate::schema::{posts, posts_tags, users};
+use crate::schema::{posts, posts_tags};
 use diesel::{prelude::*};
 use serde::{Serialize, Deserialize};
 
 //sub task 1
 
-#[derive(Debug,Identifiable,Queryable,Serialize, Deserialize,Clone)]
-pub struct User {
-    pub id: i32,
-    pub username: String,
-    pub first_name: String,
-    pub last_name: String,
-}
-
-#[derive(Queryable, Insertable, Serialize, Deserialize,Debug)]
-#[diesel(table_name = users)]
-pub struct NewUser {
-    pub username: String,
-    pub first_name: String,
-    pub last_name: String,
-}
 
 #[derive(Queryable, Serialize, Deserialize,Clone,Debug,Identifiable)]
 #[diesel(table_name = posts)]

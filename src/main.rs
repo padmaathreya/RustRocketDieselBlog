@@ -37,5 +37,8 @@ fn rocket() -> _ {
         .mount("/", routes![services::user::create_user])//subtask 1
         .mount("/", routes![services::user::list_users])//subtask 1
         .mount("/", routes![services::user::get_users])//subtask 1
+         .mount("/", routes![services::user::get_userwithgroupids])//subtask 1
+        .mount("/", routes![services::group::create_group])
+        .mount("/", routes![services::group::list_groups])
         .attach(Template::fairing())
 }
